@@ -1,0 +1,5 @@
+
+<label >Caracteristicas: </label>
+<input type="text" #nuevaCaracteristica>
+<button class="btn btn-info" (click)="agregaCaracteristicas(nuevaCaracteristica.value)">Agrega una caracteristica</button>
+<button class="btn btn-danger"(click)="quitarCaracteristicas(nuevaCaracteristica.value)">Borra la caracteristica</button>

@@ -1,0 +1,5 @@
+<p>login-component works!</p>
+<a routerLink="/" routerLinkActive="active">Inicio</a>
+<a routerLink="/profile" routerLinkActive="active" *ngIf="authService.logIn">Perfil</a>
+<a routerLink="/login" routerLinkActive="active" *ngIf="!authService.logIn">Login</a>
+<a routerLink="/" routerLinkActive="logout()" href="#" *ngIf="authService.logIn">Logout</a>
